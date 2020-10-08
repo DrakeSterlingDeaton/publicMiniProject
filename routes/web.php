@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.login');
 });
 
 
@@ -26,6 +26,10 @@ Route::middleware(['auth:sanctum'])->group(function () {
     Route::get('/page', [PageController::class, 'index']);
 
     Route::post('/messages', [MessagesController::class, 'store'])->name('messages.store');
+
+    Route::post('messages/update', [MessagesController::class, 'update'])->name('messages.update');
+
+    Route::post('messages/destroy', [MessagesController::class, 'destroy'])->name('messages.destroy');
 
 });
 

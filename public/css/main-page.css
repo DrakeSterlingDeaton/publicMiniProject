@@ -1,9 +1,16 @@
+html, body {
+    min-height: 100%;
+}
 body{
     background: #edf1f5;
     margin-top:20px;
     background: #B24592;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to top, #F15F79, #B24592);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to top, #F15F79, #B24592); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.fill {
+    /*height: 100%;*/
+    min-height: 100%;
 }
 h1 {
     text-align: center;
@@ -24,6 +31,8 @@ h1 {
 }
 .messages-box {
     margin: 1.5rem;
+    /*max-height: 41vh;*/
+    /*overflow: scroll;*/
 }
 .button-box {
     display: flex;
@@ -68,4 +77,82 @@ h1 {
 }
 .invalid-feedback {
     font-size: 100% !important;
+}
+.full-flex {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+}
+.r {
+    position: relative;
+    bottom: 5;
+}
+.r2 {
+    position: relative;
+    bottom: 4;
+    margin-right: 5px;;
+}
+.close-button {
+    padding: 0;
+}
+.close-form {
+    margin: 0 !important;
+}
+button:focus, form:focus,
+button:active, form:active {
+    outline: none !important;
+    border: none !important;
+}
+.nav-div {
+    width: 100%;
+    text-align: end;
+}
+.no-m {
+    margin: 0 !important;
+    width: fit-content;
+    display: inline;
+}
+.ml2 {
+    font-weight: 900;
+    font-size: 3.5em;
+}
+.ml2 .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+.ml3 {
+    font-weight: 900;
+    font-size: 2em;
+    text-align: center;
+
+}
+.fireworks {
+    background-color: transparent;
+    position: absolute;
+    z-index: 1;
+    pointer-events:none;
+    height: 100% !important;;
+    min-height: 100% !important;;
+    width: 100% !important;
+}
+.vue-box {
+    height: 400px;
+    width: 400px;
+    background-color: #F4A9B7;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 10rem;
+    border-radius: 34px 0 0 34px;
+    padding: 1.5rem;
+}
+.nav-div {
+    display: flex !important;
+    justify-content: flex-end;
+    align-items: center;
+}
+#user-id {
+    margin-right: 1rem;
 }

@@ -19,44 +19,44 @@ class messagesSeeder extends Seeder
 
         Message::create([
             'sender' => 'Drake',
-            'user_id' => $user_id,
+            'user_id' => 1,
             'rating' => '1',
             'message' => 'Do a git push.',
         ]);
 
         Message::create([
-            'sender' => 'Drake',
-            'user_id' => $user_id,
+            'sender' => 'Rob',
+            'user_id' => 2,
             'rating' => '1',
             'message' => 'Maybe do a git push.',
         ]);
 
         Message::create([
-            'sender' => 'Drake',
-            'user_id' => $user_id,
+            'sender' => 'Sarah',
+            'user_id' => 3,
             'rating' => '2',
             'message' => 'Consider git pushing.',
         ]);
 
         Message::create([
-            'sender' => 'Drake',
-            'user_id' => $user_id,
+            'sender' => 'Rob',
+            'user_id' => 2,
             'rating' => '2',
-            'message' => 'A git push would be good.',
+            'message' => 'Have you even made a repo yet?',
         ]);
 
         Message::create([
             'sender' => 'Drake',
             'user_id' => $user_id,
             'rating' => '3',
-            'message' => 'Have you considered a push?',
+            'message' => 'GitLab? GitHub? BitBucket? Anything?',
         ]);
 
         Message::create([
             'sender' => 'Drake',
             'user_id' => $user_id,
             'rating' => '3',
-            'message' => 'Please push.',
+            'message' => 'What are you waiting for?',
         ]);
 
         Message::create([
@@ -77,7 +77,7 @@ class messagesSeeder extends Seeder
             'sender' => 'Drake',
             'user_id' => $user_id,
             'rating' => '5',
-            'message' => 'Definitely push.',
+            'message' => 'Definitely do a git push.',
         ]);
 
     }

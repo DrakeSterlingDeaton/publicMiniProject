@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Message;
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class PageController extends Controller
 {
@@ -13,7 +15,8 @@ class PageController extends Controller
      */
     public function index()
     {
-        $messages = Message::all();
-        return view('/pages/page', compact('messages'));
+        $messages = Auth::user()->messages()->get();
+        $users = User::all();
+        return view('/pages/page', compact('messages', 'users'));
     }
 }
