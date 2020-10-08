@@ -1,0 +1,71 @@
+body{
+    background: #edf1f5;
+    margin-top:20px;
+    background: #B24592;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #F15F79, #B24592);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #F15F79, #B24592); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+h1 {
+    text-align: center;
+    margin: 3rem 0 1.5rem 0 !important;
+    font-size: 3rem !important;
+}
+.main-form {
+    margin: 1.5rem;
+    background: #F4A9B7;  /* fallback for old browsers */
+    /*background: -webkit-linear-gradient(to left, #F15F79, #B24592);  !* Chrome 10-25, Safari 5.1-6 *!*/
+    /*background: linear-gradient(to left, #F15F79, #B24592); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
+}
+.main-form-inner {
+    padding: 1.5rem
+}
+.box1,.box2 {
+    margin-bottom: 1.5rem;
+}
+.messages-box {
+    margin: 1.5rem;
+}
+.button-box {
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem 0 0.25rem 0;
+}
+.btn-primary {
+    background-color: #e4597e !important;
+    border: none !important;
+}
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid transparent;
+    border-radius: 0;
+}
+.mailbox-widget .custom-tab .nav-item .nav-link {
+    border: 0;
+    color: #fff;
+    border-bottom: 3px solid transparent;
+}
+.mailbox-widget .custom-tab .nav-item .nav-link.active {
+    background: 0 0;
+    color: #fff;
+    border-bottom: 3px solid #2cd07e;
+}
+.no-wrap td, .no-wrap th {
+    white-space: nowrap;
+}
+.table td, .table th {
+    padding: .9375rem .4rem;
+    vertical-align: top;
+    border-top: 1px solid rgba(120,130,140,.13);
+}
+.font-light {
+    font-weight: 300;
+}
+.invalid-feedback {
+    font-size: 100% !important;
+}
